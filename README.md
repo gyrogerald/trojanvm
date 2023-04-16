@@ -53,7 +53,7 @@ cd
 * Install Semua Layanan VPN /Install All VPN Service
    
 ```html
-wget https://raw.github.com/antinsp/bonetrojan/main/jejel/trojan && chmod +x trojan && ./trojan
+wget https://raw.github.com/gyrogerald/trojanvm/main/jejel/trojan && chmod +x trojan && ./trojan
 ```
   
 
