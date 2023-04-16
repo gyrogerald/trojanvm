@@ -63,9 +63,6 @@ chmod +x /usr/local/bin/xray
 # Make Folder XRay
 mkdir -p /var/log/xray/
 
-#Change Xray Core Dynamic Path
-wget -q -O /root/updateCore.sh "https://raw.githubusercontent.com/syfqsamvpn/scriptvps/main/dll/system/updateCore.sh" && chmod +x /root/updateCore.sh && ./updateCore.sh
-
 sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill
 cd /root/
 wget https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh
@@ -634,4 +631,8 @@ apt-get install speedtest
 systemctl daemon-reload 
 systemctl enable trojan-go 
 systemctl start trojan-go
-systemctl status trojan-go
+systemctl status trojan-go | cat
+sleep 5
+
+#Change Xray Core Dynamic Path
+wget -q -O /root/updateCore.sh "https://raw.githubusercontent.com/syfqsamvpn/scriptvps/main/dll/system/updateCore.sh" && chmod +x /root/updateCore.sh && ./updateCore.sh
